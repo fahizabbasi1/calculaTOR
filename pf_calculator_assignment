@@ -1,0 +1,16 @@
+#include <iostream>
+
+   int  main() {
+    int a=40;
+     int b= 20;
+    
+     int add=a+b;
+     int sub=a-b;
+     int mul=a*b;
+     double div=a/b;
+   std :: cout<<  "ADDITION ="<<add<<std::endl;
+    std :: cout<<  "SUBTRACTION = "<<sub<<std::endl;
+     std :: cout<<  "MULTIPICATION = "<<mul<<std::endl;
+      std :: cout<<  "DIVISION = "<<div<<std::endl;
+   return 0;
+}
