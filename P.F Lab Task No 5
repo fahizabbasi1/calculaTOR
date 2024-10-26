@@ -1,0 +1,125 @@
+Task No 1
+#include <iostream>
+
+int main() {
+    for (int i = 1; i <= 5; ++i) {
+        std::cout << i << std::endl;
+    }
+    return 0;
+}
+Task No 2
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+   cout << "Enter a positive integer n: ";
+    cin >> n;
+
+    //  n is positive
+    if (n < 1) {
+        std::cout << "Please enter a positive integer." << std::endl;
+        return 1; // Exit with an error code
+    }
+
+    int sum = 0;
+    for (int i = 1; i <= n; ++i) {
+        sum += i;
+    }
+
+    std::cout << "The sum of the first " << n << " natural numbers is: " << sum << std::endl;
+
+    return 0;
+}
+   Task NO 3
+#include <iostream>
+using namespace std;
+
+int main() {
+    int number;
+
+    cout << "Enter a number: ";
+ cin >> number;
+
+    cout << "Multiplication table for " << number << ":\n";
+    
+    for (int i = 1; i <= 10; ++i) {
+        std::cout << number << " x " << i << " = " << number * i << std::endl;
+    }
+
+    return 0;
+}
+
+Tak NO 4
+#include <iostream>
+using namespace std;
+int main() {
+   cout << "Even numbers between 1 and 20 are:\n";
+    
+    for (int i = 1; i <= 20; ++i) {
+        if (i % 2 == 0) {
+            std::cout << i << std::endl;
+        }
+    }
+
+    return 0;
+}
+   Task NO 5
+#include <iostream>
+using namespace std;
+int main() {
+    cout << "Numbers from 10 to 1 in reverse order:\n";
+    
+    for (int i = 10; i >= 1; --i) {
+        std::cout << i << std::endl;
+    }
+
+    return 0;
+}
+  Task NO 6
+#include <iostream>
+using namespace std;
+int main() {
+    cout << "Numbers from 10 to 1 in reverse order:\n";
+    
+    for (int i = 10; i >= 1; --i) {
+        std::cout << i << std::endl;
+    }
+
+    return 0;
+}
+   Task NO 7
+#include <iostream>
+using namespace std;
+int main() {
+    int numSubjects;
+    
+    // enter the total number of subjects
+    cout << "Enter the total number of subjects: ";
+    cin >> numSubjects;
+
+    // each subject to enter marks
+    for (int i = 1; i <= numSubjects; ++i) {
+        int marks;
+        
+        cout << "Enter marks for subject " << i << " (out of 100): ";
+        cin >> marks;
+
+        // Classify the marks into grades
+        char grade;
+        if (marks >= 90) {
+            grade = 'A';
+        } else if (marks >= 75) {
+            grade = 'B';
+        } else if (marks >= 50) {
+            grade = 'C';
+        } else {
+            grade = 'F';
+        }
+
+        // Display the grade
+        std::cout << "Grade for subject " << i << ": " << grade << std::endl;
+    }
+
+    return 0;
+}
